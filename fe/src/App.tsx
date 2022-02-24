@@ -8,7 +8,7 @@ function App() {
 
   useEffect(() => {
     const init = async () => {
-      const provider = ethers.providers.getDefaultProvider();
+      const provider = new ethers.providers.Web3Provider(window.ethereum)
       const blockNumber = await provider.getBlockNumber();
       const balance = await provider.getBalance("ethers.eth");
 

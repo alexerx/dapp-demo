@@ -19,6 +19,11 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   }
 });
 
+// try another custom task
+task("wtf", "print WTF", async () => {
+  console.log("WTF");
+});
+
 // You need to export an object to set up your config
 // Go to https://hardhat.org/config/ to learn more
 
